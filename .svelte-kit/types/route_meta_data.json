@@ -1,0 +1,9 @@
+{
+	"/": [
+		"src/routes/+page.server.ts"
+	],
+	"/offline": [],
+	"/sse": [
+		"src/routes/sse/+server.ts"
+	]
+}
