@@ -20,7 +20,6 @@ export const actions = {
     const clientId = crypto.randomUUID();
     const expires = new Date();
     expires.setTime(expires.getTime() + 2000 * 3600);
-console.log({clientId, name})
     cookies.set('session', JSON.stringify({ clientId, name }), {
       path: '/', expires: expires, sameSite: 'lax', httpOnly: false
     });
